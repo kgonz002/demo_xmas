@@ -5,14 +5,58 @@
     <title>Demo Site</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="css\style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js\main.js" async defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
+    </style>
   </head>
   <body>
     <div id="header"></div>
-    <!--Remaining section-->
+
+    <!-- hero section greeting -->
+    <div class="greeting-container">
+      <div><h1 class="greeting">T'is the season.</h1></div>
+      <div>
+        <video width="125%" autoplay loop muted>
+          <source src="assets/animations/tree raw.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- animated cord -->
+    <!-- <div class="cord-container">
+      <svg
+        width="666"
+        height="1973"
+        viewBox="0 0 666 1973"
+        fill="none"
+        preserveAspectRatio="xMidYMax meet"
+      >
+        <path
+          d="M343 1C349.271 25.3233 310.317 85.5 343 131C368.5 166.5 411.5 196 483 219C525.197 232.574 547 239 603 283C659 327 672 409.5 659 455C634.429 541 587.5 586 537.5 619.5C490.5 650.99 439.389 619.5 363 707C253 833 109 683 23 821C-13.145 879 -3.00011 975 59 1007C121 1039 315 954.273 395 1107C451.434 1214.74 244 1241 315 1339C371.8 1417.4 435 1563 315 1691C305.334 1703.5 279 1723 264.5 1728.5C244.398 1736.13 207 1740 195.5 1771C184 1802 204 1802.5 212.5 1806C218.72 1808.56 232.391 1811.73 234.5 1826.5C235.5 1833.5 231.5 1840.5 223.5 1848.5C217.1 1854.9 214.5 1864.5 214 1868.5C212.5 1875.5 211.1 1891.1 217.5 1897.5M217.5 1897.5C221.5 1897.5 223.167 1897.5 223.5 1897.5C225.5 1897.5 226.5 1898.9 226.5 1900.5C226.5 1902.1 226.5 1906.83 226.5 1909L236.5 1919.5C238 1920.67 241 1924 241 1928C241 1932 240.667 1943 240.5 1948C240.167 1950.17 238.2 1954.5 233 1954.5C233 1961.7 233 1965.83 233 1967C233 1970.5 230.701 1971.17 229 1971.5C226.5 1971.5 224.5 1970 224.5 1967C224.5 1959.8 224.5 1956.33 224.5 1955.5H208V1967C208 1970 206.8 1971.5 204 1971.5C201.2 1971.5 199.5 1970 199.5 1967V1955.5C196.834 1954.67 191.5 1952 191.5 1948C191.5 1944 191.5 1933 191.5 1928C191.5 1925.67 192.8 1922.7 196 1919.5C199.2 1916.3 204 1911.17 206 1909V1900.5C206.167 1899.17 207 1897.5 211 1897.5C215 1897.5 217 1897.5 217.5 1897.5Z"
+          stroke="black"
+          stroke-width="3"
+        />
+      </svg>
+    </div> -->
+
+    <!-- <section class="one">
+      <h1 class="scroll" data-rate=".2" data-direction="vertical">section 1</h1>
+    </section>
+
+    <section class="two">
+      <h1 class="scroll" data-rate=".2" data-direction="vertical">section 2</h1>
+    </section> -->
+
     <div id="footer"></div>
   </body>
 </html>

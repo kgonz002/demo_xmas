@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
+
 body {
   background-color: #fff0d8;
   height: 500vh;
   margin: 0;
 }
 
-.footer {
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* ---------------------------navigation-------------------------------- */
@@ -12,7 +19,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0.5rem 1.5rem;
+  margin: 0 1.5rem;
 }
 
 a,
@@ -26,17 +33,23 @@ button {
 
 .logo {
   height: 10em;
-  margin-right: auto;
+  padding-left: 5vh;
 }
 
 .nav-links {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 13vh 0 0 0;
+  margin-left: 5vh;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0 1.25em 0 1.25em;
-  margin-top: -2rem;
+  padding: 0 3% 0 3%;
 }
 
 .nav-links li a {
@@ -50,7 +63,31 @@ button {
 .nav-links li a:hover {
   color: rgba(0, 173, 181, 0.8);
 }
-/* end navigation */
+/* -------------------end navigation------------------------- */
+
+/* -------------------Hero Section--------------------------- */
+
+.hero-image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-image-div {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hero-image {
+  display: grid;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .greeting-container {
   margin: auto;
@@ -71,6 +108,8 @@ button {
   font-size: 4vw;
 }
 
+/* --------------end Hero Section---------------------------- */
+
 .cord-container {
   position: fixed;
   top: 0;
@@ -86,9 +125,9 @@ svg {
   height: 100%;
 }
 
-section {
+.wtf {
   height: 100vh;
-  display: grid;
+  padding: 10em;
   place-content: center;
   font-family: "Garamond";
   font-size: 4em;
